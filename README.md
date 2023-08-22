@@ -75,6 +75,13 @@ psql -d <database> -U <username> -W
 
 select datname  from pg_database;
 
+
+---
+psql -d <database> -U <username>
+
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
+
+
 ```
 
 
