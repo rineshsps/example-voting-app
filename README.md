@@ -44,6 +44,41 @@ Run the following command to create the deployments and services. Note it will c
 kubectl create -f k8s-specifications/
 ```
 
+Get pod  
+
+```shell
+kubectl get pods 
+```
+
+Get service  
+
+```shell
+kubectl get services 
+```
+
+
+To get inside a Redis database running  
+
+```shell
+kubectl exec -it <pod-name> -- /bin/sh
+
+redis-cli
+
+```
+
+To get inside a Redis database running  
+
+```shell
+kubectl exec -it <pod-name> -- /bin/bash
+
+psql -d <database> -U <username> -W
+
+select datname  from pg_database;
+
+```
+
+
+
 The `vote` web app is then available on port 31000 on each host of the cluster, the `result` web app is available on port 31001.
 
 To remove them, run:
