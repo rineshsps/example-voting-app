@@ -2,6 +2,8 @@
 
 A simple distributed application running across multiple Docker containers.
 
+yaml file (work on the Kubernetes cluster) : https://github.com/rineshsps/example-voting-app-kubernetes 
+
 article: https://medium.com/@vikisquarez/docker-beginner-example-voting-application-207162338e79
 
 video: https://accionlabs.udemy.com/course/learn-kubernetes/learn/lecture/21126242#notes 
