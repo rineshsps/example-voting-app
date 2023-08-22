@@ -64,6 +64,11 @@ kubectl exec -it <pod-name> -- /bin/sh
 
 redis-cli
 
+scan 0 
+GET votes
+type votes
+LRANGE votes 0 10  
+
 ```
 
 To get inside a Redis database running  
