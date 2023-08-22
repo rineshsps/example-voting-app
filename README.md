@@ -99,6 +99,34 @@ To remove them, run:
 kubectl delete -f k8s-specifications/
 ```
 
+## deploy in aks azure 
+
+Reference : https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli 
+
+#1 create Kubernetes service in aks 
+#2 open shell cmd, then login with below cmd 
+
+```shell
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+```
+
+#3 clone the repo
+```shell
+git clone https://github.com/rineshsps/example-voting-app.git
+```
+
+#4 change the diectory 
+```shell
+cd example-voting-app/
+```
+
+#5 create 
+```shell
+kubectl create -f k8s-specifications/
+```
+
+
+
 ## Architecture
 
 ![Architecture diagram](architecture.excalidraw.png)
